@@ -16,6 +16,14 @@ about.addEventListener('click', e => {
             btn.classList.remove('active');
             // aggiungo la classe active al bottone cliccato
             e.target.classList.add('active');
-        })
+        });
+        // faccio un ciclo anche sugli articoli per eseguire la stessa procedura
+        articles.forEach(article => {
+            // rimuovo la classe active a tutti gli articoli
+            article.classList.remove('active');
+        });
+        // seleziono l'articolo in base all'id 
+        const element = document.getElementById(id);
+        element.classList.add('active');
     }
 })
