@@ -6,5 +6,6 @@ const articles = document.querySelectorAll('.content');
 // aggancio un ascoltatore di eventi al contenitore genitore
 
 about.addEventListener('click', e => {
-
+    // dichiaro una variabile per salvare il dataset id dei bottoni
+    const id = e.target.dataset.id;
 })
